@@ -132,7 +132,7 @@
             tabsContent.height(tabsContent.find('.active').outerHeight());
 
 
-            tabsTitlesItems.on('click', function () {
+            tabsTitlesItems.on('mouseover', function () {
 
                 if (!tabs.hasClass('changing')) {
 
@@ -146,7 +146,7 @@
 
                     var curHeight = curTab.outerHeight();
 
-                    nextTab.show();
+                    nextTab.fadeIn(500);
 
                     var nextHeight = nextTab.outerHeight();
 
